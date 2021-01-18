@@ -1,5 +1,6 @@
 {
   "name": "vue-test-utils",
+  "main": "packages/test-utils/dist/vue-test-utils.iife.js",
   "private": true,
   "workspaces": [
     "packages/*"
