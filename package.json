@@ -1,6 +1,6 @@
 {
   "name": "vue-test-utils",
-  "main": "packages/test-utils/dist/vue-test-utils.iife.js",
+  "main": "packages/test-utils/dist/vue-test-utils.js",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -26,7 +26,7 @@
     "test:unit:browser": "cross-env TEST_ENV=browser TARGET=browser NODE_ENV=browser karma start ./test/setup/karma.config.js",
     "test:types": "tsc -p packages/test-utils/types && tsc -p packages/server-test-utils/types"
   },
-  "dependencies": {
+  "devDependencies": {
     "chalk": "^4.1.0",
     "conditional-specs": "^1.0.1",
     "conventional-changelog": "^3.1.12",
@@ -51,9 +51,7 @@
     "vuepress": "^1.5.2",
     "@vuepress/theme-vue": "^1.5.2",
     "@vuepress/plugin-pwa": "^1.5.2",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
+    "vuex": "^3.0.1",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-decorators": "^7.0.0",
